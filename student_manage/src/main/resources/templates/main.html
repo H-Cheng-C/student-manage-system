@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+
+    </title>
+    <link href="http:localhost:8080/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/ystep.css" rel="stylesheet"/>
+    <style type="text/css">
+        #img_Stu {
+
+            width: 100px;
+            height: 140px;
+            border-radius: 50%;
+        }
+
+        .Num {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form name="form1" method="post" action="Main.aspx" id="form1">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUKLTUyNzIwNTE4MA9kFgICAw9kFgRmD2QWEgIBDw8WAh4EVGV4dAUCNDZkZAIDDw8WAh8ABQIyNGRkAgUPDxYCHwAFAzI4OGRkAgcPDxYCHwAFAzExNGRkAgkPDxYCHwAFAjI0ZGQCCw8PFgIfAAUCODNkZAINDw8WAh8ABQIzMGRkAg8PDxYCHwAFAjUwZGQCEQ8PFgIfAAUCMjVkZAIBDw8WAh4HVmlzaWJsZWhkZGTTIDFTwqBm1PD/zqT0tHVd234TpQ=="/>
+    </div>
+
+    <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="202EA31B"/>
+    </div>
+    <div id="pl_Admin">
+
+        <div style="width:860px; margin:0 auto; text-align:center; font-family:'Microsoft YaHei';">
+            <h1>“专升本”报名管理信息系统</h1><br/>
+            <h3>数据统计</h3>
+            <table class="table table-bordered table-hover" style="width:280px; float:left; margin:0;">
+                <caption>
+                    <center><h4>基础数据</h4></center>
+                </caption>
+                <tr style="background-color:#F5F5F5;">
+                    <td>
+                        考试科目个数：<span id="la_Subject" class="Num">46</span>个
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        招生专业个数：<span id="la_profession" class="Num">24</span>个
+                    </td>
+                </tr>
+            </table>
+            <div style="width:10px; height:200px; float:left;"></div>
+            <table class="table table-bordered table-hover" style="width:280px; float:left;">
+                <caption>
+                    <center><h4>学生数据</h4></center>
+                </caption>
+                <tr style="background-color:#F5F5F5;">
+                    <td>
+                        注册用户人数：<span id="la_RegisterNum" class="Num">288</span>人
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        完成报名人数：<span id="la_Apply" class="Num">114</span>人
+                    </td>
+                </tr>
+                <tr style="background-color:#F5F5F5;">
+                    <td>
+                        待审核总人数：<span id="la_WaitAudit" class="Num">24</span>人
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        审核通过人数：<span id="la_HaveAudit" class="Num">83</span>人
+                    </td>
+                </tr>
+                <tr style="background-color:#F5F5F5;">
+                    <td>
+                        全校录取人数：<span id="la_Offer" class="Num">30</span>人
+                    </td>
+                </tr>
+            </table>
+            <table class="table table-bordered table-hover" style="width:280px; float:right;">
+                <caption>
+                    <center><h4>考场数据</h4></center>
+                </caption>
+                <tr style="background-color:#F5F5F5;">
+                    <td>
+                        公共考场个数：<span id="la_GgExam" class="Num">50</span>个
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        专用考场个数：<span id="la_ZyExam" class="Num">25</span>个
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="jquery/jquery-1.8.3.min.js"></script>
+    <script src="jquery/ystep.js"></script>
+    <script>
+        //根据jQuery选择器找到需要加载ystep的容器
+        //loadStep 方法可以初始化ystep
+        var flag = 0
+        $(".ystep").loadStep({
+            size: "large",
+            color: "blue",
+            steps: [{
+                title: "注册",
+                content: "进入专升本系统，完成注册。"
+            }, {
+                title: "报名",
+                content: "提交个人信息，打印报名表。"
+            }, {
+                title: "审核",
+                content: "等待现场确认，完成审核。"
+            }, {
+                title: "下载准考证",
+                content: "下载准考证，参与考试。"
+            }, {
+                title: "成绩查询",
+                content: "完成考试，登录系统查询成绩。"
+            }, {
+                title: "录取查询",
+                content: "等待院校公布录取名单。"
+            }]
+        });
+        $(".ystep").setStep(flag);
+
+    </script>
+
+</form>
+</body>
+</html>

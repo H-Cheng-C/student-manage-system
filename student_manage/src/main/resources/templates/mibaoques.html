@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../system.ico"/>
+    <title>
+    </title>
+    <link href="http://localhost:8080/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body style="background-color:#286778;">
+<form name="form1" method="post" th:action="@{/checkans}" id="form1">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUKMjA4MDQ0MDczM2RkvnSSuWFGXytX8sm3xBOogrAfhlk="/>
+    </div>
+
+    <div>
+        <input type="hidden" name="phone" th:value="${phone}">
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9B45412B"/>
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEWAwKXzt5wAsHN568IAtiMtNYMgezlOQX8O6P4wusQ4drRsbkrrF0="/>
+    </div>
+    <div class="bluebg"
+         style="width:800px; height:680px; border-radius:10px; margin:20px auto; text-align:center; background-color:#FEFFF1">
+        <br/>
+        <div style="height:530px; width:800px;">
+
+            <div class="header">
+                <div class="headerlinks"><a href="http://www.hsit.edu.cn/" target="_blank">湖北理工学院官网</a>　|　<a
+                        th:href="tologin" target="_blank">登陆界面</a>　
+                </div>
+
+            </div>
+            <table style="width:350px; margin:25px auto; text-align:left">
+                <tr style="height:35px">
+                    <td colspan="2" th:text="${que1}"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="questionOne" type="text" id="que1" class="form-control" style="width:200px;"/>
+                    </td>
+                </tr>
+                <tr style="height:35px">
+                    <td colspan="2" th:text="${que2}"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="questionTwo" type="text" id="que2" class="form-control" style="width:200px;"/><p style="color: red;font-size: large" th:text="${msg}"></p>
+                    </td>
+                </tr>
+
+            </table>
+            <input type="submit" name="bt_confirm" value="提交" id="bt_confirm" class="btn btn-default"/>
+
+        </div>
+
+    </div>
+</form>
+</body>
+</html>

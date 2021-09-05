@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<!--      xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="http://localhost:8080/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>
+
+    </title>
+    <style type="text/css">
+        body {
+            background-color: #286778;
+        }
+
+        #tvRole {
+            margin-left: 10px;
+        }
+
+        li {
+            color: white;
+            margin: 5px 0;
+        }
+
+        a {
+            color: white;
+            font-size: medium;
+            text-decoration: none;
+        }
+
+        a :hover {
+            color: red; /*#e2fa14*/
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<form name="form1" method="post" action="left.aspx" id="form1">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUKMTc3ODI0NTEzNw9kFgICAw9kFgQCAQ9kFgICAQ8PFgIeBFRleHQFD+i2hee6p+euoeeQhuWRmGRkAgMPFgIeC18hSXRlbUNvdW50AgkWEmYPZBYCAgEPFgIeBGhyZWYFGH4vTm90aWNlL1JlYWROb3RpY2UuYXNweBYCZg8VAhxnbHlwaGljb24gZ2x5cGhpY29uLWJ1bGxob3JuDOmAmuefpeWFrOWRimQCAQ9kFgICAQ8WAh8CBSZ+L0FkbWluL0Jhc2ljSW5mby9CYXNpY0luZm9NYW5nZXIuYXNweBYCZg8VAhhnbHlwaGljb24gZ2x5cGhpY29uLWJvb2sS5Z+656GA5L+h5oGv566h55CGZAICD2QWAgIBDxYCHwIFKn4vQWRtaW4vUmVnaXN0ZXJNYW5nZXIvUmVnaXN0ZXJNYW5nZXIuYXNweBYCZg8VAhhnbHlwaGljb24gZ2x5cGhpY29uLWVkaXQM5rOo5YaM566h55CGZAIDD2QWAgIBDxYCHwIFJH4vQWRtaW4vQXBwbHlNYW5nZXIvQXBwbHlNYW5nZXIuYXNweBYCZg8VAh9nbHlwaGljb24gZ2x5cGhpY29uLWZvbGRlci1vcGVuEuaKpeWQjeS/oeaBr+euoeeQhmQCBA9kFgICAQ8WAh8CBSR+L0FkbWluL0F1ZGl0TWFuZ2VyL0F1ZGl0TWFuZ2VyLmFzcHgWAmYPFQIZZ2x5cGhpY29uIGdseXBoaWNvbi10YXNrcwzlrqHmoLjnrqHnkIZkAgUPZBYCAgEPFgIfAgUffi9BZG1pbi9FeGFtTWFuZ2VyL1NldEV4YW0uYXNweBYCZg8VAh5nbHlwaGljb24gZ2x5cGhpY29uLWJsYWNrYm9hcmQS6ICD5Zy65a6J5o6S566h55CGZAIGD2QWAgIBDxYCHwIFKH4vQWRtaW4vR3JhZGVNYW5nZXIvR3JhZGVJbmZvTWFuZ2VyLmFzcHgWAmYPFQIaZ2x5cGhpY29uIGdseXBoaWNvbi1wZW5jaWwM5oiQ57up566h55CGZAIHD2QWAgIBDxYCHwIFIn4vQWRtaW4vT2ZmZXJNYW5nZXIvV2FpdE9mZmVyLmFzcHgWAmYPFQIYZ2x5cGhpY29uIGdseXBoaWNvbi1zZW5kDOW9leWPlueuoeeQhmQCCA9kFgICAQ8WAh8CBSZ+L0FkbWluL0FkbWluSW5mb01hbmdlci9BZG1pbkluZm8uYXNweBYCZg8VAhhnbHlwaGljb24gZ2x5cGhpY29uLXVzZXIV566h55CG5ZGY5L+h5oGv566h55CGZGS63I28P1z7bB+PLJ4sxTm2xAPZSg=="/>
+    </div>
+
+    <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5D656E11"/>
+    </div>
+    <div>
+        <div>
+
+            <br/>
+            <a href="/desktop" id="A1" target="main" class="mm" style="margin-left:15px">
+                <span style="color:white"><span class="glyphicon glyphicon-th-large"></span>&nbsp;&nbsp;&nbsp;<span
+                        style="font-size:large; font-weight:bolder; display: inline-block;">桌面（<span id="la_Name" th:text="${session.loginUser}"></span>）</span>
+                </span> </a>
+            <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+            <div>
+
+                <div shiro:hasPermission="1">
+
+                    <a href="Notice/ReadNotice.aspx" id="rp_BaseAutority_ctl00_A2" style="margin-left: 35px;" class="sm"
+                       target="main">
+                        <span class='glyphicon glyphicon-bullhorn'></span>&nbsp;&nbsp;&nbsp;<span><b>通知公告</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="2">
+
+                    <a href="Admin/BasicInfo/BasicInfoManger.aspx" id="rp_BaseAutority_ctl01_A2"
+                       style="margin-left: 35px;" class="sm" target="main">
+                        <span class='glyphicon glyphicon-book'></span>&nbsp;&nbsp;&nbsp;<span><b>基础信息管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="3">
+
+                    <a href="Admin/RegisterManger/RegisterManger.aspx" id="rp_BaseAutority_ctl02_A2"
+                       style="margin-left: 35px;" class="sm" target="main">
+                        <span class='glyphicon glyphicon-edit'></span>&nbsp;&nbsp;&nbsp;<span><b>注册管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="4">
+
+                    <a href="Admin/ApplyManger/ApplyManger.aspx" id="rp_BaseAutority_ctl03_A2"
+                       style="margin-left: 35px;" class="sm" target="main">
+                        <span class='glyphicon glyphicon-folder-open'></span>&nbsp;&nbsp;&nbsp;<span><b>报名信息管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="5">
+
+                    <a href="Admin/AuditManger/AuditManger.aspx" id="rp_BaseAutority_ctl04_A2"
+                       style="margin-left: 35px;" class="sm" target="main">
+                        <span class='glyphicon glyphicon-tasks'></span>&nbsp;&nbsp;&nbsp;<span><b>审核管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="6">
+
+                    <a href="Admin/ExamManger/SetExam.aspx" id="rp_BaseAutority_ctl05_A2" style="margin-left: 35px;"
+                       class="sm" target="main">
+                        <span class='glyphicon glyphicon-blackboard'></span>&nbsp;&nbsp;&nbsp;<span><b>考场安排管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="7">
+
+                    <a href="Admin/GradeManger/GradeInfoManger.aspx" id="rp_BaseAutority_ctl06_A2"
+                       style="margin-left: 35px;" class="sm" target="main">
+                        <span class='glyphicon glyphicon-pencil'></span>&nbsp;&nbsp;&nbsp;<span><b>成绩管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="8">
+
+                    <a href="Admin/OfferManger/WaitOffer.aspx" id="rp_BaseAutority_ctl07_A2" style="margin-left: 35px;"
+                       class="sm" target="main">
+                        <span class='glyphicon glyphicon-send'></span>&nbsp;&nbsp;&nbsp;<span><b>录取管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+                <div shiro:hasPermission="9">
+
+                    <a th:href="@{/adminquery}" id="rp_BaseAutority_ctl08_A2" style="margin-left: 35px;" class="sm"
+                       target="main">
+                        <span class='glyphicon glyphicon-user'></span>&nbsp;&nbsp;&nbsp;<span><b>管理员信息管理</b></span>
+                    </a>
+                </div>
+                <div style="height:2px; width:100%; background-color:#7CBBCC; margin:5px auto"></div>
+
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
+

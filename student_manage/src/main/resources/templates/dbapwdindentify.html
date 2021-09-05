@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+
+</title><link href="http:localhost:8080/css/bootstrap.min.css" rel="stylesheet" /></head>
+<body>
+<form name="form1" method="post" th:action="@{/pwdidentify}" id="form1">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTI0NTA2NjE4ZGR48u1Mq52DT/4pjfDSmztSf0FeuA==" />
+    </div>
+
+    <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="36DD35BB" />
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKg/LffDgK5oa7sDALYjLTWDOXBldOjXb+zpp89U5hiljJxjJeA" />
+    </div>
+    <div style="margin-bottom:10px; padding:8px 0 8px 15px; background-color:#F5F5F5"><a href="../../Desktop.aspx">桌面</a>&nbsp;&gt;&gt;&nbsp;
+        <a href="AdminInfo.aspx">管理员信息管理</a>&nbsp;&gt;&gt;&nbsp;
+        <a href="UserInfoManger.aspx" style="color:red;">添加管理员</a></div>
+    <div style="width:800px; margin:0 auto;">
+        <div id="pl_CheckPwd">
+            <table style="width:350px; margin:25px auto; text-align:left">
+                <tr style="height:35px"><td colspan="2"> 验证密码：</td></tr><tr><td>
+                <input name="pwd" type="password" id="tb_CheckPwd" class="form-control" style="width:200px;" /></td><td>
+                <input type="submit" name="bt_confirm" value="确  定" id="bt_confirm" class="btn btn-primary" />
+            </td>
+            </tr>
+            </table>
+
+        </div>
+
+    </div>
+</form><p style="color: red;margin-left: 550px" th:text="${msg}"></p>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../system.ico"/>
+    <title>
+        账号注册_专升本系统_湖北理工
+    </title>
+    <link href="http://localhost:8080/css/.css" rel="stylesheet"/>
+    <link href="http://localhost:8080/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body style="background-color:#286778">
+<form name="ctl01" method="post" th:action="@{/stuzhuce}"  id="ctl01">
+    <div>
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""/>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUKLTMxOTAwNjY2NGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFCmNiX3llc09yTm+YdMzEx75o8RPoY54HpoISvVbmow=="/>
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['ctl01'];
+        if (!theForm) {
+            theForm = document.ctl01;
+        }
+
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+
+        //]]>
+    </script>
+
+
+    <script src="/WebResource.axd?d=JJUSvLaBAvoSMAuAJSJQ2dPjovzdCxTeJy1Oc0RNM6fzrcuB9TYaIc-xKp2k1WisvDC2wjx4yxN6_SSCosNdiVp6QcA1&amp;t=635588906575142005"
+            type="text/javascript"></script>
+
+
+    <script src="/WebResource.axd?d=berCHRtS7Aqf0XHRZvIl6QPrbcx7SkoQPf1iAggl9QCvrwEj7zQrMSnCfpmuLilGQ3LvJCmlpilKfnPk_jMeyuCCZfk1&amp;t=635588906575142005"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        function WebForm_OnSubmit() {
+            if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+            return true;
+        }
+
+        //]]>
+    </script>
+
+    <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4079A904"/>
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEWDQKYvrjtDgLBzeevCALF8dDtCgLu2tbgDwKfyLs6AuXeoOIDAofthpEOApC9tuQHAo7tngICv4HdpAkCm7rm5QgCh9G6nw8CrPn9+w89pHQA2DXkx9LEkYGgPv1ptIlitw=="/>
+    </div>
+    <div class="bluebg"
+         style="width:800px; height:100%; border-radius:10px; margin:5px auto; text-align:center; background-color:#EEEEEE">
+        <br/>
+        <h2 style="text-align:center; color:black">“专升本”报名管理信息系统</h2>
+        <h2 style="text-align:center; color:black"><b>注&nbsp;&nbsp;&nbsp;&nbsp;册</b></h2>
+        <div class="header">
+            <div class="headerlinks">
+                <a href="http://www.hsit.edu.cn/" target="_blank">湖北理工学院官网</a>　|　<a th:href="login"
+                                                                                    target="_blank">登陆界面</a>　
+            </div>
+        </div>
+        <div class="box clearfix">
+            <div>
+                欢迎注册湖北理工学院专升本账号
+                <div class="tlogin">
+                    已有专升本账号<a th:href="login"  class="regsuclogin">立即登录</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    注册成功后可以登录专升本系统进行报名操作<br/>
+                    (推荐下载<a href="http://www.firefox.com.cn/">火狐浏览器</a>访问本系统)
+                </div>
+                <div style="text-align:left; margin:10px auto; width:280px">
+                    <div>
+                        手机号<span style="color:red">*</span>
+                        <div>
+                            <input name="sphone" type="text" id="tb_phone" class="form-control input-sm" required=""/>
+                            <span id="RequiredFieldValidator9" style="color:Red;visibility:hidden;">*非空</span>
+                            <span id="RegularExpressionValidator3" style="color:Red;visibility:hidden;">手机号输入错误！</span>
+                        </div>
+                    </div>
+                    <div>
+                        密码<span style="color:red">*</span>
+                        <div>
+                            <input name="spassword" type="password" id="tb_password" class="form-control input-sm"
+                                   required=""/>
+                            <span id="RequiredFieldValidator2" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        密码确认<span style="color:red">*</span>
+                        <div>
+                            <input name="qspassword" type="password" id="tb_Cpassword" class="form-control input-sm"
+                                   required=""/>
+                            <span id="RequiredFieldValidator3" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        姓名<span style="color:red">*</span>
+                        <div>
+                            <input name="sname" type="text" id="tb_name" class="form-control input-sm" required=""/>
+                            <span id="RequiredFieldValidator4" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                    </div>
+
+                    <div class="regline clearfix">
+                        身份证号<span style="color:red">*</span>
+                        <div>
+                            <input name="sidfy" type="text" id="tb_IcardNo" class="form-control input-sm"
+                                   required=""/>
+                            <span id="RequiredFieldValidator5" style="color:Red;visibility:hidden;">*非空</span>
+                            <span id="RegularExpressionValidator1" style="color:Red;visibility:hidden;">身份证号输入错误！</span>
+                        </div>
+                    </div>
+                    <div>
+                        安全邮箱<span style="color:red">*</span>
+                        <div>
+                            <input name="semail" type="text" id="tb_email" class="form-control input-sm" required=""/>
+                            <span id="RegularExpressionValidator2" style="color:Red;display:none;">邮箱格式不正确</span>
+                            <span id="RequiredFieldValidator6" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>密保问题一<span style="color:red">*</span></div>
+                        <div>
+                            <select name="questionOne" id="pwdreq1" class="form-control input-sm" required="">
+                                <option value="">-----请选择-----</option>
+                                <option value="1">您的学号（或工号）是？</option>
+                                <option value="2">您母亲的姓名是？</option>
+                                <option value="3">您母亲的生日是？</option>
+                                <option value="4">您父亲的姓名是？</option>
+                                <option value="5">您父亲的生日是？</option>
+                                <option value="6">您高中班主任的名字是？</option>
+                                <option value="7">您初中班主任的名字是？</option>
+                                <option value="8">您小学班主任的名字是？</option>
+                                <option value="9">您最熟悉的童年好友名字是？</option>
+                                <option value="10">您最熟悉的学校宿舍室友名字是？</option>
+                                <option value="11">对您影响最大的人名字是？</option>
+                            </select>
+                            <span id="RequiredFieldValidator10" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                        <div>密保问题一答案<span style="color:red">*</span></div>
+                        <div>
+                            <input name="ansOne" type="text" id="tb_answerOne" class="form-control input-sm"
+                                   required=""/>
+                            <span id="RequiredFieldValidator7" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>密保问题二<span style="color:red">*</span></div>
+                        <div>
+                            <select name="questionTwo" id="pwdreq2" class="form-control input-sm" required="">
+                                <option value="">-----请选择-----</option>
+                                <option value="1">您的学号（或工号）是？</option>
+                                <option value="2">您母亲的姓名是？</option>
+                                <option value="3">您母亲的生日是？</option>
+                                <option value="4">您父亲的姓名是？</option>
+                                <option value="5">您父亲的生日是？</option>
+                                <option value="6">您高中班主任的名字是？</option>
+                                <option value="7">您初中班主任的名字是？</option>
+                                <option value="8">您小学班主任的名字是？</option>
+                                <option value="9">您最熟悉的童年好友名字是？</option>
+                                <option value="10">您最熟悉的学校宿舍室友名字是？</option>
+                                <option value="11">对您影响最大的人名字是？</option>
+                            </select>
+                            <span id="RequiredFieldValidator11" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                        <div>密保问题二答案<span style="color:red">*</span></div>
+                        <div>
+                            <input name="answerTwo" type="text" id="tb_answerTwo" class="form-control input-sm"
+                                   required=""/>
+                            <span id="RequiredFieldValidator8" style="color:Red;visibility:hidden;">*非空</span>
+                        </div>
+                    </div>
+                    <div>
+                        <input id="cb_yesOrNo" type="checkbox" name="cb_yesOrNo"/>
+                        <label for="serviceNote_yes">我已阅读并同意<a target="_blank"
+                                                               href="TermOfService.html">服务条款</a></label>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" name="bt_Regiser" value="注   册"
+                           id="bt_Regiser" class="btn btn-primary"/>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div><a href="http://www.hsit.edu.cn/" target="_blank">湖北理工学院</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            Copyright 20016-2018 湖北理工学院(www.hbpu.edu.cn) 邮编：435003 电子邮件：wlzx@hbpu.edu.cn<br/>
+            地址：湖北省黄石市桂林北路16号 电话：0714-6368150(柳老师) 15072052118(张老师)
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var Page_Validators = new Array(document.getElementById("RequiredFieldValidator9"), document.getElementById("RegularExpressionValidator3"), document.getElementById("RequiredFieldValidator2"), document.getElementById("RequiredFieldValidator3"), document.getElementById("RequiredFieldValidator4"), document.getElementById("RequiredFieldValidator5"), document.getElementById("RegularExpressionValidator1"), document.getElementById("RegularExpressionValidator2"), document.getElementById("RequiredFieldValidator6"), document.getElementById("RequiredFieldValidator10"), document.getElementById("RequiredFieldValidator7"), document.getElementById("RequiredFieldValidator11"), document.getElementById("RequiredFieldValidator8"));
+        //]]>
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var RequiredFieldValidator9 = document.all ? document.all["RequiredFieldValidator9"] : document.getElementById("RequiredFieldValidator9");
+        RequiredFieldValidator9.controltovalidate = "tb_phone";
+        RequiredFieldValidator9.errormessage = "*非空";
+        RequiredFieldValidator9.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator9.initialvalue = "";
+        var RegularExpressionValidator3 = document.all ? document.all["RegularExpressionValidator3"] : document.getElementById("RegularExpressionValidator3");
+        RegularExpressionValidator3.controltovalidate = "tb_phone";
+        RegularExpressionValidator3.errormessage = "手机号输入错误！";
+        RegularExpressionValidator3.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+        RegularExpressionValidator3.validationexpression = "^[1][3578][0-9]{9}$";
+        var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+        RequiredFieldValidator2.controltovalidate = "tb_password";
+        RequiredFieldValidator2.errormessage = "*非空";
+        RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator2.initialvalue = "";
+        var RequiredFieldValidator3 = document.all ? document.all["RequiredFieldValidator3"] : document.getElementById("RequiredFieldValidator3");
+        RequiredFieldValidator3.controltovalidate = "tb_Cpassword";
+        RequiredFieldValidator3.errormessage = "*非空";
+        RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator3.initialvalue = "";
+        var RequiredFieldValidator4 = document.all ? document.all["RequiredFieldValidator4"] : document.getElementById("RequiredFieldValidator4");
+        RequiredFieldValidator4.controltovalidate = "tb_name";
+        RequiredFieldValidator4.errormessage = "*非空";
+        RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator4.initialvalue = "";
+        var RequiredFieldValidator5 = document.all ? document.all["RequiredFieldValidator5"] : document.getElementById("RequiredFieldValidator5");
+        RequiredFieldValidator5.controltovalidate = "tb_IcardNo";
+        RequiredFieldValidator5.errormessage = "*非空";
+        RequiredFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator5.initialvalue = "";
+        var RegularExpressionValidator1 = document.all ? document.all["RegularExpressionValidator1"] : document.getElementById("RegularExpressionValidator1");
+        RegularExpressionValidator1.controltovalidate = "tb_IcardNo";
+        RegularExpressionValidator1.errormessage = "身份证号输入错误！";
+        RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+        RegularExpressionValidator1.validationexpression = "^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([0-9]|X)$";
+        var RegularExpressionValidator2 = document.all ? document.all["RegularExpressionValidator2"] : document.getElementById("RegularExpressionValidator2");
+        RegularExpressionValidator2.controltovalidate = "tb_email";
+        RegularExpressionValidator2.errormessage = "邮箱格式不正确";
+        RegularExpressionValidator2.display = "Dynamic";
+        RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+        RegularExpressionValidator2.validationexpression = "^[a-zA-Z0-9]{1,}@[a-zA-Z0-9]{1,}.(com|net|org|edu|mil|cn|cc)$";
+        var RequiredFieldValidator6 = document.all ? document.all["RequiredFieldValidator6"] : document.getElementById("RequiredFieldValidator6");
+        RequiredFieldValidator6.controltovalidate = "tb_email";
+        RequiredFieldValidator6.errormessage = "*非空";
+        RequiredFieldValidator6.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator6.initialvalue = "";
+        var RequiredFieldValidator10 = document.all ? document.all["RequiredFieldValidator10"] : document.getElementById("RequiredFieldValidator10");
+        RequiredFieldValidator10.controltovalidate = "pwdreq1";
+        RequiredFieldValidator10.errormessage = "*非空";
+        RequiredFieldValidator10.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator10.initialvalue = "";
+        var RequiredFieldValidator7 = document.all ? document.all["RequiredFieldValidator7"] : document.getElementById("RequiredFieldValidator7");
+        RequiredFieldValidator7.controltovalidate = "tb_answerOne";
+        RequiredFieldValidator7.errormessage = "*非空";
+        RequiredFieldValidator7.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator7.initialvalue = "";
+        var RequiredFieldValidator11 = document.all ? document.all["RequiredFieldValidator11"] : document.getElementById("RequiredFieldValidator11");
+        RequiredFieldValidator11.controltovalidate = "pwdreq2";
+        RequiredFieldValidator11.errormessage = "*非空";
+        RequiredFieldValidator11.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator11.initialvalue = "";
+        var RequiredFieldValidator8 = document.all ? document.all["RequiredFieldValidator8"] : document.getElementById("RequiredFieldValidator8");
+        RequiredFieldValidator8.controltovalidate = "tb_answerTwo";
+        RequiredFieldValidator8.errormessage = "*非空";
+        RequiredFieldValidator8.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator8.initialvalue = "";
+        //]]>
+    </script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        var Page_ValidationActive = false;
+        if (typeof (ValidatorOnLoad) == "function") {
+            ValidatorOnLoad();
+        }
+
+        function ValidatorOnSubmit() {
+            if (Page_ValidationActive) {
+                return ValidatorCommonOnSubmit();
+            } else {
+                return true;
+            }
+        }
+
+        //]]>
+    </script>
+</form>
+</body>
+</html>

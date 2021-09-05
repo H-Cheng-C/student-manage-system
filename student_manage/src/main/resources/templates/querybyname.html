@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div>
+    <table class="table table-striped">
+        <thead>
+        <tr class="info" style="font-weight:bolder;">
+            <td style="width:5%;">序号</td>
+            <td style="width:25%;">姓名</td>
+            <td style="width:25%;">电话</td>
+            <td style="width:35%;">邮箱</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="res:${list}">
+            <td th:text="${res.getUserName()}"></td>
+            <td th:text="${res.getTname()}"></td>
+            <td th:text="${res.getTphone()}"></td>
+            <td th:text="${res.getTemail()}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

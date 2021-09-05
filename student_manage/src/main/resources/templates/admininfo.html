@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<form name="form1" method="post" th:action="@{/querylike}" id="form1">
+    <div style="margin-bottom:10px; padding:8px 0 8px 15px; background-color:#F5F5F5"><a th:href="@{/desktop}">桌面</a>&nbsp;&gt;&gt;&nbsp;
+        <a th:href="@{/adminquery}" style="color:red;">管理员信息管理</a></div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr class="info" style="font-weight:bolder;">
+                <td style="width:5%;">序号</td>
+                <td style="width:25%;">姓名</td>
+                <td style="width:25%;">电话</td>
+                <td style="width:35%;">邮箱</td>
+                <td style="width:10%;">删除</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="res:${list}">
+                <td th:text="${res.getUserName()}" style="width:5%;"></td>
+                <td  style="width:25%;"><a th:text="${res.getTname()}" th:href="@{'/shouyuhuishou?currentname='+${res.getTname()}}"></a></td>
+                <td th:text="${res.getTphone()}" style="width:25%;"></td>
+                <td th:text="${res.getTemail()}" style="width:35%;"></td>
+                <td style="width:10%;"><button class="btn btn-danger" th:onclick="deletedba([[${res.getUserName()}]]);">删除</button></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <table style="line-height:50px" class="table table-bordered">
+                <tr>
+                    <td style="width:70px;text-align:right;">
+                        姓名：
+                    </td>
+                    <td style="width:200px">
+                        <input name="tname" type="text" id="tb_Query" class="form-control" style="width:200px;"/>
+                    </td>
+
+                    <td>
+                        <input type="submit" name="bt_Query" value="查  询" id="bt_Query" class="btn btn-primary"/>
+                        <a th:href="@{/dbapwdindentify}" class="btn btn-primary">添加管理员</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>
+</body>
+<script type="text/javascript">
+    function deletedba(data) {
+        $.ajax({
+            type:"post",
+            dataType:"text",
+            data:{"dbaid":data},
+            url:'/deletedba',
+            success:function () {
+                alert("删除成功");
+                window.location.href="http://localhost:8080/adminquery";
+            },
+        })
+    }
+</script>
+</html>

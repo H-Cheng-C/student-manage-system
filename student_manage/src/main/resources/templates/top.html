@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+
+    </title>
+    <script language="javascript" type="text/javascript" src="http://localhost:8080/js/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $("#exit").click(function () {
+                parent.close();
+            });
+            $("#reLogin").click(function () {
+                if (confirm("确定重新登录吗？")) {
+                    top.location.href = "Login.aspx";
+                }
+            });
+        });</script>
+
+
+    <style type="text/css">
+        * {
+            font-family: "宋体";
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            font-size: small;
+            font-weight: bold;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(http://localhost:8080/img/login-bg.png) repeat;
+        }
+
+        #head {
+            background: url(http://localhost:8080/img/logo.PNG);
+            height: 120px;
+            width: 600px;
+            float: left;
+        }
+
+        #top {
+        }
+
+        #gblink {
+            text-align: right;
+            padding-top: 15px;
+            margin-right: 170px;
+            float: right
+        }
+
+        #gblink p {
+            margin-top: 10px;
+        }
+
+        #gblink a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        #gblink a:hover {
+            color: #f00;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<form name="form1" method="post" action="top.aspx" id="form1">
+    <div>
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""/>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwULLTE5Nzc3MzA4NDEPZBYCAgMPZBYCAgMPDxYCHgRUZXh0BREyMDIx5bm0MDbmnIgyMuaXpWRkZI5nM3MamlXg7KlHL7YxyXhINKv+"/>
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['form1'];
+        if (!theForm) {
+            theForm = document.form1;
+        }
+
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+
+        //]]>
+    </script>
+
+
+    <script src="/WebResource.axd?d=JJUSvLaBAvoSMAuAJSJQ2dPjovzdCxTeJy1Oc0RNM6fzrcuB9TYaIc-xKp2k1WisvDC2wjx4yxN6_SSCosNdiVp6QcA1&amp;t=635588906575142005"
+            type="text/javascript"></script>
+
+
+    <script src="/ScriptResource.axd?d=1uY_OTFVPDOC2szNS_b19cfbTAtEjTaAjGdr2yR8Z8v2fXHK605M-0vXVofgx_UUgdTHQuLjOUBF17MTtbfdKsLUp6ij1sbSxIneUjUFG7KhXIC8spAnKi5m-MvbO_9xVTLWLFqYO3rUYUho0coveTkiKEnDHKSE37-ofpaVMNH32qLk0&amp;t=2e2045e2"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        if (typeof (Sys) === 'undefined') throw new Error('ASP.NET Ajax 客户端框架未能加载。');
+        //]]>
+    </script>
+
+    <script src="/ScriptResource.axd?d=_sJVUzR-MeSxMBe7JUpyKyrUfpytxeip7Nd4PUOy4BLaPu3ReAxvAJBKtqUYKCh3xN-4grb4x10_RfOyNPj16fJf5kiOtNYn1EzZE2yPqsPM1e7idZmQDe-si5kEV1iqrpgCljZTBzt586walA67HhvKYvgMH9J91GHy3B-sSoITS0Oo0&amp;t=2e2045e2"
+            type="text/javascript"></script>
+    <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="34503213"/>
+    </div>
+    <script type="text/javascript">
+        //<![CDATA[
+        Sys.WebForms.PageRequestManager._initialize('ScriptManager1', document.getElementById('form1'));
+        Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+        //]]>
+    </script>
+
+    <div id="top">
+        <div id="head">
+        </div>
+        <div id="gblink"><p><a href="Desktop.aspx" target="main">我的桌面</a><a href="Public/ModifyPwd.aspx" target="main">修改密码</a><a
+                th:href="@{/logOut}" th:target="_parent" id="reLogin">重新登录</a><a th:href="@{/logOut}" th:target="_parent" id="exit"
+                                                 onclick="window.parent.parent.open('','_self');window.parent.parent.close();">退出系统</a>
+        </p>
+        </div>
+        <span style="position:absolute;bottom:35px;right:210px;width:150px;">
+            <marquee direction="left" scrollamount="2">
+                   <span id="lr_Time" style="color:White;font-family:Arail;font-size:9pt;">2021年06月22日</span>
+               </marquee></span>
+
+    </div>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+        Sys.Application.initialize();
+        //]]>
+    </script>
+</form>
+</body>
+</html>
+ 

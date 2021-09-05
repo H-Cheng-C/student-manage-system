@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+
+    </title>
+    <link href="http://localhost/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<form name="form1" method="post" th:action="@{/adddba}" id="form1">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUJMTI0NTA2NjE4D2QWAgIDD2QWBAIBDw8WAh4HVmlzaWJsZWhkZAIDDw8WAh8AZ2RkZD6aRoLTWxoDsqRexjAmlZW3cwnL"/>
+    </div>
+
+    <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="36DD35BB"/>
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEWBgKGzueLCgLBzefqCgK2xoPvBQKfyLs6AofthkwCkcTDkgsWZq4wiVnBNk6u91U+EWQqqIefCg=="/>
+    </div>
+    <div style="margin-bottom:10px; padding:8px 0 8px 15px; background-color:#F5F5F5"><a
+            href="../../Desktop.aspx">桌面</a>&nbsp;&gt;&gt;&nbsp;
+        <a href="AdminInfo.aspx">管理员信息管理</a>&nbsp;&gt;&gt;&nbsp;
+        <a href="UserInfoManger.aspx" style="color:red;">添加管理员</a></div>
+    <div style="width:800px; margin:0 auto;">
+
+        <div id="pl_AdmInfo">
+
+            <table id="StuInfo" class="table table-bordered table-hover">
+                <caption>
+                    <center><h3><b>添加管理员</b></h3></center>
+                </caption>
+                <tbody>
+                <tr>
+                    <td style="text-align:right;">手机号：</td>
+                    <td><input name="tphone" type="text" id="tb_Phone" class="form-control" required=""/></td>
+                    <td style="width:110px; text-align:right;">密码：</td>
+                    <td><input name="tpassword" type="password" id="tb_Pwd" class="form-control" required=""/></td>
+                </tr>
+                <tr>
+                    <td style="width:120px;text-align:right;">姓名：</td>
+                    <td>
+                        <input name="tname" type="text" id="tb_name" class="form-control" required=""/></td>
+                    <td style="width:120px;text-align:right;">邮箱：</td>
+                    <td>
+                        <input name="temail" type="text" id="tb_Email" class="form-control" required=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <input type="submit" name="bt_Save" value="保  存" id="bt_Save" class="btn btn-primary"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../system.ico"/>
+    <title>
+        找回密码_专升本系统_湖北理工
+    </title>
+    <link href="http://localhost:8080/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body style="background-color:#286778;">
+<form name="form1" method="post" th:action="@{/zhaohuipwd}" id="form1">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+               value="/wEPDwUKMjA4MDQ0MDczM2RkvnSSuWFGXytX8sm3xBOogrAfhlk="/>
+    </div>
+
+    <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9B45412B"/>
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+               value="/wEWAwKXzt5wAsHN568IAtiMtNYMgezlOQX8O6P4wusQ4drRsbkrrF0="/>
+    </div>
+    <div class="bluebg"
+         style="width:800px; height:680px; border-radius:10px; margin:20px auto; text-align:center; background-color:#FEFFF1">
+        <br/>
+        <div style="height:530px; width:800px;">
+            <h1 style="text-align:center; color:black">“专升本”报名管理信息系统</h1>
+            <h2 style="text-align:center; color:black"><b>找回密码</b></h2>
+            <div class="header">
+                <div class="headerlinks"><a href="http://www.hsit.edu.cn/" target="_blank">湖北理工学院官网</a>　|　<a
+                        href="../Login.aspx" target="_blank">登陆界面</a>　
+                </div>
+
+            </div>
+            <table style="width:350px; margin:25px auto; text-align:left">
+                <tr style="height:35px">
+                    <td colspan="2"> 注册手机号：</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="sphone" type="text" id="tb_phone" class="form-control" style="width:200px;"/>
+                    </td>
+                    <td>
+                        <input type="submit" name="bt_confirm" value="获取密保问题" id="bt_confirm" class="btn btn-default"/>
+                    </td>
+                </tr>
+            </table>
+            <p style="color: red" th:text="${msg}"></p>
+        </div>
+        <center><p>如若忘记密保问题答案，请联系管理员！</p>
+            <p>联系电话：0714-652455847</p></center>
+        <div id="footer" style="margin-bottom:25px; height:50px; width:800px"><a href="http://www.hsit.edu.cn/"
+                                                                                 target="_blank">湖北理工学院</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            Copyright 20016-2018 湖北理工学院(www.hbpu.edu.cn) 邮编：435003 电子邮件：wlzx@hbpu.edu.cn<br/>
+            地址：湖北省黄石市桂林北路16号 电话：0714-6368150(柳老师) 15072052118(张老师)
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
