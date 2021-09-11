@@ -1,0 +1,4 @@
+com\qingcheng\controller\SeckillGoodsController.class
+com\qingcheng\controller\WxPayController.class
+com\qingcheng\controller\SeckillOrderController.class
+com\qingcheng\controller\RedirectController.class

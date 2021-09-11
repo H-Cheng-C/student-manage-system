@@ -1,0 +1,45 @@
+package com.qingcheng.entity;
+
+import java.io.Serializable;
+
+public class Result implements Serializable {
+
+    private Integer code;//业务返回码
+    private String message;
+    //存储其他信息
+    private Object other;
+
+    public Object getOther() {
+        return other;
+    }
+
+    public void setOther(Object other) {
+        this.other = other;
+    }
+
+    public Result(Integer code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+
+    public Result() {
+        this.code=0;
+        this.message="执行成功";
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}

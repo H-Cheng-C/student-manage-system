@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:20:06:51 +0800] "GET /brand/findall HTTP/1.1" 404 977 http-bio-9101-exec-2 73
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:20:06:51 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9101-exec-3 2
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:20:07:09 +0800] "GET /brand/findAll HTTP/1.1" 404 977 http-bio-9101-exec-4 5
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:20:07:29 +0800] "GET /brand/findAll.do HTTP/1.1" 500 5531 http-bio-9101-exec-5 15275
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:20:36:54 +0800] "GET /brand/findAll.do HTTP/1.1" 500 5531 http-bio-9101-exec-6 13
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:20:36:58 +0800] "GET /brand/findAll.do HTTP/1.1" 500 5531 http-bio-9101-exec-8 24
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:20:58:40 +0800] "GET /brand/findAll.do HTTP/1.1" 500 5531 http-bio-9101-exec-2 16388
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:21:09:44 +0800] "GET /brand/findAll.do HTTP/1.1" 500 5531 http-bio-9101-exec-1 14773
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:21:12:40 +0800] "GET /brand/findAll.do HTTP/1.1" 500 5531 http-bio-9101-exec-2 14297
+0:0:0:0:0:0:0:1 - - [13/Jul/2021:21:22:07 +0800] "GET /brand/findAll.do HTTP/1.1" 500 5531 http-bio-9101-exec-2 15613

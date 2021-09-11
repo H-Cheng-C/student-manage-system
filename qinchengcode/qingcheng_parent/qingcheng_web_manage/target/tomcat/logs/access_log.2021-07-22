@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [22/Jul/2021:19:29:05 +0800] "POST /spu/save.do HTTP/1.1" 200 35 http-bio-9101-exec-2 29644
+0:0:0:0:0:0:0:1 - - [22/Jul/2021:19:47:48 +0800] "POST /spu/save.do HTTP/1.1" 200 35 http-bio-9101-exec-2 27502
+0:0:0:0:0:0:0:1 - - [22/Jul/2021:19:48:17 +0800] "POST /spu/save.do HTTP/1.1" 200 35 http-bio-9101-exec-3 67
+0:0:0:0:0:0:0:1 - - [22/Jul/2021:20:03:44 +0800] "GET /spu/findGoodsById.do?id=1418171232624447488 HTTP/1.1" 404 949 http-bio-9101-exec-2 21238
+0:0:0:0:0:0:0:1 - - [22/Jul/2021:20:05:31 +0800] "GET /spu/findGoodsById.do?id=1418171232624447488 HTTP/1.1" 200 1746 http-bio-9101-exec-2 23967
+0:0:0:0:0:0:0:1 - - [22/Jul/2021:20:20:48 +0800] "POST /spu/save.do HTTP/1.1" 200 35 http-bio-9101-exec-2 26302

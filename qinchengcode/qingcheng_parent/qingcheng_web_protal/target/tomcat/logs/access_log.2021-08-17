@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:12:19:25 +0800] "GET /cart.html HTTP/1.1" 302 - http-bio-9102-exec-1 159
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:12:19:53 +0800] "GET /login/cas?ticket=ST-1-UbO90BNoOzpggNUReixMiCGHF3sDESKTOP-MGUPFPJ HTTP/1.1" 302 - http-bio-9102-exec-4 288
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:12:19:53 +0800] "GET /cart.html HTTP/1.1" 200 14770 http-bio-9102-exec-5 31
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:12:20:15 +0800] "GET /cart/findCartList.do HTTP/1.1" 500 12609 http-bio-9102-exec-7 21195
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:12:20:15 +0800] "GET /cart/findCartList.do HTTP/1.1" 500 12609 http-bio-9102-exec-8 189
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:12:20:15 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9102-exec-9 18
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:30:51 +0800] "GET /cart.html HTTP/1.1" 302 - http-bio-9102-exec-2 625
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:33:35 +0800] "GET /cart.html HTTP/1.1" 302 - http-bio-9102-exec-5 43
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:38:11 +0800] "GET /login/cas?ticket=ST-1-3ppUo80rXTRk5pPmAng-0c60pBoDESKTOP-MGUPFPJ HTTP/1.1" 302 - http-bio-9102-exec-7 578
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:38:11 +0800] "GET /cart.html HTTP/1.1" 200 14770 http-bio-9102-exec-8 40
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:38:46 +0800] "GET /cart.html HTTP/1.1" 200 14770 http-bio-9102-exec-10 14
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:38:48 +0800] "GET /img/favicon.ico HTTP/1.1" 200 4286 http-bio-9102-exec-3 92
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:38:51 +0800] "GET /cart/findCartList.do HTTP/1.1" 500 12609 http-bio-9102-exec-10 3294
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:38:51 +0800] "GET /cart/findCartList.do HTTP/1.1" 500 12609 http-bio-9102-exec-9 38393
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:39:07 +0800] "GET /cart/findCartList.do HTTP/1.1" 500 12609 http-bio-9102-exec-3 68
+0:0:0:0:0:0:0:1 - - [17/Aug/2021:21:39:07 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9102-exec-5 14
