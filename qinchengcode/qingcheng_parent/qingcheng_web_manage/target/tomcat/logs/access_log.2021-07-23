@@ -1,9 +1,0 @@
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:22:51 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 500 9307 http-bio-9101-exec-2 18368
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:22:52 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9101-exec-1 18
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:24:49 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 200 2 http-bio-9101-exec-2 21631
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:30:15 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 500 14682 http-bio-9101-exec-2 29472
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:31:59 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 500 5602 http-bio-9101-exec-3 37
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:32:02 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 500 5602 http-bio-9101-exec-4 37
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:34:36 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 200 2 http-bio-9101-exec-1 22163
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:21:37:13 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 500 14677 http-bio-9101-exec-2 28676
-0:0:0:0:0:0:0:1 - - [23/Jul/2021:22:06:57 +0800] "GET /categoryReport/yesterday.do HTTP/1.1" 200 426 http-bio-9101-exec-1 22101

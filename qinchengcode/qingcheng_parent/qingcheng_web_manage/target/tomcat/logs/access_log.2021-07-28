@@ -1,8 +1,0 @@
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:45:39 +0800] "GET /report/categoryReport.html HTTP/1.1" 200 5752 http-bio-9101-exec-2 98
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:45:40 +0800] "GET /js/util.js HTTP/1.1" 304 - http-bio-9101-exec-3 50
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:45:40 +0800] "GET /js/echarts.common.min.js HTTP/1.1" 304 - http-bio-9101-exec-1 54
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:45:40 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9101-exec-5 5
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:45:57 +0800] "GET /js/axios.min.map HTTP/1.1" 404 983 http-bio-9101-exec-8 1
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:46:13 +0800] "GET /categoryReport/category1Count.do?date1=2019-04-15&date2=2019-04-17 HTTP/1.1" 200 76 http-bio-9101-exec-7 23509
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:46:13 +0800] "GET /categoryReport/category1Count.do?date1=2019-04-15&date2=2019-04-16 HTTP/1.1" 200 76 http-bio-9101-exec-10 1097
-0:0:0:0:0:0:0:1 - - [28/Jul/2021:20:46:27 +0800] "GET /categoryReport/category1Count.do?date1=2019-04-15&date2=2019-04-17 HTTP/1.1" 200 76 http-bio-9101-exec-1 29
